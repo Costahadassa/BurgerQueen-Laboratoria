@@ -3,6 +3,14 @@ import "./style.css"
 
 function Register() {
   const [signIn, setRegister] = useState ({'restaurant':'Gostoso e Saúdavel'});
+  const history = useHistory();
+  const hall = () => {
+    history.push('/hall')
+    }
+
+    const kitchen = () => {
+      history.push('/kitchen')
+    }
   
   const handleSendRegister = (e) => {
     e.preventDefault(); 
@@ -14,8 +22,17 @@ function Register() {
       body: JSON.stringify(signIn)   
     })
       .then(response => response.json())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error));
+      .then((result) => { console.log(result)
+        localStorage.setItem('token', result.token);
+      
+              if(result.role === "waiter"){
+                hall();
+              }
+              else if(result.role === "cooker"){
+                kitchen();
+              }
+          })      
+      
   }
   return (
     
