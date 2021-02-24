@@ -1,31 +1,29 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
-  Route,
-  Link
+  Route 
 } from "react-router-dom";
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Hall from './pages/Hall';
+import Kitchen from './pages/Kitchen';
 
 function App() {
   return (
-    <Router>
-      <div>             
-            {/* <Link to="/login">login</Link>            <Link to="/register">register</Link> */}
-           
-        
+
+    <BrowserRouter>
+      
+        {/* <Link to="/login">login</Link>            <Link to="/register">register</Link> */}
+
+
         <Switch>
-                  
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
+          <Route path='/' exact component={Login} />
+          <Route path='/register' component={Register} />
+          <Route path='/hall' component={Hall} />
+          <Route path='/kitchen' component={Kitchen} />
         </Switch>
-      </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
