@@ -2,29 +2,20 @@ import './App.css';
 import {
   BrowserRouter,
   Switch,
-  Route 
+  Route
 } from "react-router-dom";
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Hall from './pages/Hall';
-import Kitchen from './pages/Kitchen';
+import Login from './Pages/Login/index';
+import Register from './Pages/Register/index';
+import Hall from './Pages/Hall/index';
+import Kitchen from './Pages/Kitchen/index';
+import React from 'react';
 
-function App() {
+function Router() {
   return (
 
-    <BrowserRouter>
-      
-        {/* <Link to="/login">login</Link>            <Link to="/register">register</Link> */}
-
-
-        <Switch>
-          <Route path='/' exact component={Login} />
-          <Route path='/register' component={Register} />
-          <Route path='/hall' component={Hall} />
-          <Route path='/kitchen' component={Kitchen} />
-        </Switch>
-    </BrowserRouter>
+    {/* <Link to="/login">login</Link>            <Link to="/register">register</Link> */ }
+       
   );
 }
 
-export default App;
+export default Router;

@@ -1,16 +1,17 @@
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
+import {useHistory} from "react-router-dom";
 import "./style.css"
 
 function Register() {
   const [signIn, setRegister] = useState ({'restaurant':'Gostoso e Saúdavel'});
-  const history = useHistory();
-  const hall = () => {
-    history.push('/hall')
-    }
+  let history = useHistory();
+  // const hall = () => {
+  //   history.push('/hall')
+  //   }
 
-    const kitchen = () => {
-      history.push('/kitchen')
-    }
+  //   const kitchen = () => {
+  //     history.push('/kitchen')
+  //   }
   
   const handleSendRegister = (e) => {
     e.preventDefault(); 
@@ -26,10 +27,10 @@ function Register() {
         localStorage.setItem('token', result.token);
       
               if(result.role === "waiter"){
-                hall();
+                history.push('/hall');
               }
               else if(result.role === "cooker"){
-                kitchen();
+                history.push('/kitchen');
               }
           })      
       
