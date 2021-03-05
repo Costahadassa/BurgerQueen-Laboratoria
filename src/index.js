@@ -7,6 +7,7 @@ import Login from './Pages/Login/index';
 import Register from './Pages/Register/index';
 import Hall from './Pages/Hall/index';
 import Kitchen from './Pages/Kitchen/index';
+import Finish from './Pages/Finish/index';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
           <Route path='/register' component={Register}/>
           <Route path='/hall' component={Hall}/>
           <Route path='/kitchen' component={Kitchen}/>
+          <Route path='/finish' component={Finish}/>
         </Switch >
   </BrowserRouter>,
   document.getElementById('root')

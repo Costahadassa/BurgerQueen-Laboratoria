@@ -50,8 +50,8 @@ function Register() {
         </div>
         <div className="half-box">
           <label> Função</label>
-          <input type="radio" className='select' value='cooker' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Cozinheiro(a)</p> 
-          <input type="radio" className='select' value='waiter' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Garçom/Garçonete</p> 
+          <input type="radio" className='select' value='cooker' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Cozinha</p> 
+          {/* <input type="radio" className='select' value='waiter' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Garçom/Garçonete</p>  */}
         </div>
         <div className="half-box">
           <label> Senha</label>

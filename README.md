@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Gostoso e Saúdavel :hamburger:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [Introdução](#introdução)
+* [Resumo do projeto](#resumo-do-projeto)
+* [Protótipo](#protótipo)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Metodologia Ágil](#metodologia-ágil)
+* [Desenvolvedoras](#desenvolvedoras)
 
-### `npm start`
+---
+### Introdução
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Gostoso e Saúdavel é um projeto 100% por demanda. Neste projeto solucionamos o seguinte problema: um pequeno restaurante de hambúrgueres, que está crescendo, necessita de uma interface em que se possa realizar pedidos utilizando um tablet, e enviá-los para a cozinha para que sejam preparados de forma ordenada e eficiente.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### História de usuário 1 - Usuário deve ter seu perfil (login/senha) para acessar o sistema.
 
-### `npm test`
+Eu como funcionário do restaurante quero entrar na plataforma e ver apenas a tela importante para o meu trabalho.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Critérios de aceitação
 
-### `npm run build`
+O que deve acontecer para satisfazer as necessidades do usuário?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Criar login e senha.
+- Registar tipo de usuário (cozinha / salão), login e senha.
+- Entrar na tela correta para cada usuário.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### História de usuário 2 - Garçom/Garçonete deve poder anotar o seu pedido.
 
-### `npm run eject`
+Eu como garçom/garçonete quero poder anotar o meu pedido saber o valor de cada
+produto e poder enviar o pedido para a cozinha para ser preparado.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Critérios de aceitação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O que deve acontecer para satisfazer as necessidades do usuário?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Anotar o nome e mesa.
+- Adicionar produtos aos pedidos.
+- Excluir produtos.
+- Ver resumo e o total da compra.
+- Enviar o pedido para a cozinha (guardar em algum banco de dados).
+- Funcionar bem e se adequar a um _tablet_.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### História de usuário 3 - Chefe de cozinha deve ver os pedidos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Eu como chefe de cozinha quero ver os pedidos dos clientes em ordem, poder marcar que estão prontos e poder notificar os garçons/garçonetes que o pedido está pronto para ser entregue ao cliente.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### História de usuário 4 - Garçom/Garçonete deve ver os pedidos prontos para servir.
 
-### Analyzing the Bundle Size
+Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá-los rapidamente aos clientes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##### Critérios de aceitação
 
-### Making a Progressive Web App
+- Ver a lista de pedidos prontos para servir.
+- Marque os pedidos que foram entregues.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##### Definição de pronto
 
-### Advanced Configuration
+- Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
+- Você deu deploy de seu aplicativo.
+- Os dados devem ser mantidos intactos, mesmo depois que um pedido foi terminado. Tudo isso para poder ter estatísticas no futuro.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
+### Tecnologias Utilizadas
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### Deployment
+ - React
+ - JavaScript
+ - JSX
+ - CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Metodologia Ágil
+![prototipo-baixa](/metodo.png)
+![prototipo-baixa](/gostoso.png)
 
-### `npm run build` fails to minify
+### Desenvolvedoras
+Hadassa Costa [Github](https://github.com/Costahadassa)
+Mayara [Github](https://github.com/apretamayara)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

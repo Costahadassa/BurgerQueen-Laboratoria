@@ -7,13 +7,13 @@ function Hall() {
     var myHeaders = new Headers();
 
     const history = useHistory();
-
     const [client, setClient] = useState("");
     const [menu, setMenu] = useState("");
     const [table, setTable] = useState("");
     const [order, setOrder] = useState([]);
     const [menuAlmoco, setMenuAlmoco] = useState("");
-    const [pedido, setPedido] = useState({client:'', table:'', products:[]})
+    const [pedido, setPedido] = useState({ client: '', table: '', products: [] })
+    const [prontos, setProntos] = useState([])
 
 
 
@@ -104,29 +104,64 @@ function Hall() {
             })
         }
     }
-    function handlePedido(){
-        const products = order.map(item=>{
-            return {'id':item.id,'qtd':item.qtd}
-        })
-        pedido.products=products
-        console.log(pedido)
+    useEffect(() => {
         fetch("https://lab-api-bq.herokuapp.com/orders", {
-            method:'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `${token}`
             },
-            body:JSON.stringify(pedido)
         })
-        .then(response=>response.json())
-        .then(data=>{
-            console.log(data)
+            .then(response => response.json())
+            .then(result => {
+                const pedidosPendentes = result                
+                setProntos(pedidosPendentes.filter((pedido) => pedido.status.includes('done')))
+
+            })
+            .catch(error => console.log('error', error));
+    }, [token])
+
+    const statusFinalizados = (id, index) => {
+        fetch(`https://lab-api-bq.herokuapp.com/orders/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`
+            },
+            body: JSON.stringify({ 'status': 'finish' })
+
         })
+            .then(response => response.json())
+            .then(result => {
+                if (result.id === prontos[index].id) {
+                    prontos.splice(index, 1)
+                    setProntos([...prontos])
+                }
+
+            })
+    }
+    function handlePedido() {
+        const products = order.map(item => {
+            return { 'id': item.id, 'qtd': item.qtd }
+        })
+        pedido.products = products
+        console.log(pedido)
+        fetch("https://lab-api-bq.herokuapp.com/orders", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`
+            },
+            body: JSON.stringify(pedido)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
     }
     return (
         <>
-        <input type='text'placeholder='Nome do Cliente'onChange={(e)=>setPedido({...pedido,'client':e.target.value})}></input>
-        <input type='text'placeholder='Mesa'onChange={(e)=>setPedido({...pedido,'table':e.target.value})}></input>
+            <input type='text' placeholder='Nome do Cliente' onChange={(e) => setPedido({ ...pedido, 'client': e.target.value })}></input>
+            <input type='text' placeholder='Mesa' onChange={(e) => setPedido({ ...pedido, 'table': e.target.value })}></input>
             <button onClick={getCafe}>Café da manhã</button>
             <div>
                 {menu && menu.map((item) => (
@@ -167,8 +202,23 @@ function Hall() {
                 ))}
             </div>
             <button onClick={handlePedido}>Enviar Pedido</button>
+
+            <h1 className="tituloCozinha">Pedidos Prontos</h1>
+            {prontos.map((pedido, index) => (
+                <>
+                    <p key={index}>{pedido.client_name} {pedido.id}</p>
+
+                    <div>{pedido.Products.map(item => (
+                        <p>{item.name}</p>
+                    ))}</div>
+                    <button onClick={() => statusFinalizados(pedido.id, index)}>Entregar Pedido</button>
+                </>
+            ))}
         </>
+
+
     );
+
 }
 
 export default Hall;

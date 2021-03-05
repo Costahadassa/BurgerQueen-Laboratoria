@@ -49,7 +49,7 @@ function Login() {
         <input type="email" name="=email" value = {email} onChange = {e => setEmail(e.target.value)} id="email" placeholder="Digite seu e-mail" autocomplete="of" />
         <label >Senha</label>
         <input type="password" name="password" value = {password} onChange = {e => setPassword(e.target.value)} id="password" placeholder="Digite a sua senha" />
-        <Link to="/register" id="forgot-pass">Não tem cadastro?</Link>
+        <Link to="/register" id="forgot-pass">Cadastre</Link>
         <input type="submit" onClick ={(e) => {e.preventDefault(); handleAuthentication();}} />
       </form>
     </div>
