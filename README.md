@@ -1,3 +1,4 @@
+
 # Lanchonete Gostoso & Saudável
 
 Esta aplicação foi criada para uma lanchonete que houve um aumento nas demandas e faz entregas 24 horas. 
@@ -21,7 +22,7 @@ A tela de cadastro é a tela que o funcionario realiza o mesmo e juntamente com 
 
 Já na tela do salão, o funcionário tem acesso aos cardápios, ao resumo do pedido, podendo adicionar ou remover as unidades do pedido e enviar para cozinha.
 
-![salai](/img/salao.jpeg)
+![salao](/img/salao.jpeg)
 
 Na tela da cozinha, o cozinheiro tem acesso aos pedidos por ordem de horario, tem acesso ao nome do cliente e mesa, consegue modificar o staus do pedido e enviar para o garçom realizar a entrega.
 
