@@ -1,86 +1,61 @@
-# Gostoso e Saúdavel :hamburger:
+
+# Lanchonete Gostoso & Saudável
+
+Esta aplicação foi criada para uma lanchonete que houve um aumento nas demandas e faz entregas 24 horas. 
+A necessidade do cliente era uam aplicação onde onde os funcionários conseguem realizar os pedidos dos clientes por um iPad e envia para a cozinha, lá é onde os pedidos são realizados por ordem de horário e depois de pronto, o pedido é retornado ao garçom, realizando assim entrega na mesa da cliente.
+
+A lanchonete tem 2 menus: o do café da manhã e o restante do dia, o cliente fazendo o pedido, o garçom consegue adicionar ou diminuir produtos ao resumo do pedido e no mesmo já mostra o total da compra.
+![humm](https://i0.wp.com/24.media.tumblr.com/e594fbaff6c6d3fc4ad3e13fea2bd63c/tumblr_mqfroaqxDH1rzo57ko1_500.gif)
+ 
 
 
-## Índice
 
-* [Introdução](#introdução)
-* [Histórias de Usuários](#histórias-de-usuários)
-* [Tecnologias Utilizadas](#tecnologias-utilizadas)
-* [Metodologia Ágil](#metodologia-ágil)
-* [Desenvolvedoras](#desenvolvedoras)
+##  Desenho de interface do usuário 
 
----
-### Introdução
+Nessa primeira tela temos o login, onde o funcionário pode ter acesso a sua respectiva tela e caso não tenha cadastro ele consegue criar.
 
-Gostoso e Saúdavel é um projeto 100% por demanda. Neste projeto solucionamos o seguinte problema: um pequeno restaurante de hambúrgueres, que está crescendo, necessita de uma interface em que se possa realizar pedidos utilizando um tablet, e enviá-los para a cozinha para que sejam preparados de forma ordenada e eficiente.
+![login](/img/login.png)
 
-#### História de usuário 1 - Usuário deve ter seu perfil (login/senha) para acessar o sistema.
+A tela de cadastro é a tela que o funcionario realiza o mesmo e juntamente com sua função, garantindo a eficiencia das telas de funcionalidade.
 
-Eu como funcionário do restaurante quero entrar na plataforma e ver apenas a tela importante para o meu trabalho.
+![cadastro](/img/cadastro.png)
 
-##### Critérios de aceitação
+Já na tela do salão, o funcionário tem acesso aos cardápios, ao resumo do pedido, podendo adicionar ou remover as unidades do pedido e enviar para cozinha.
 
-O que deve acontecer para satisfazer as necessidades do usuário?
+![salao](/img/salao.jpeg)
 
-- Criar login e senha.
-- Registar tipo de usuário (cozinha / salão), login e senha.
-- Entrar na tela correta para cada usuário.
+Na tela da cozinha, o cozinheiro tem acesso aos pedidos por ordem de horario, tem acesso ao nome do cliente e mesa, consegue modificar o staus do pedido e enviar para o garçom realizar a entrega.
 
----
-
-#### História de usuário 2 - Garçom/Garçonete deve poder anotar o seu pedido.
-
-Eu como garçom/garçonete quero poder anotar o meu pedido saber o valor de cada
-produto e poder enviar o pedido para a cozinha para ser preparado.
+![cozinha](/img/index.jpeg)
 
 
-##### Critérios de aceitação
+## O que o usuário já tem acesso 
+<img src= "https://miro.medium.com/max/1600/1*XZ3TXibcnhNic2dCQSKIbg.gif" width="60" height="60" />
 
-O que deve acontecer para satisfazer as necessidades do usuário?
+✅ Fazer login e o mesmo já direciona o funcionário para sua respectiva tela.
 
-- Anotar o nome e mesa.
-- Adicionar produtos aos pedidos.
-- Excluir produtos.
-- Ver resumo e o total da compra.
-- Enviar o pedido para a cozinha (guardar em algum banco de dados).
-- Funcionar bem e se adequar a um _tablet_.
+✅ Usuário consegue fazer seu cadastro juntamente com sua função.
 
----
+✅ Consegue visualisar os produtos do cardápio
 
-#### História de usuário 3 - Chefe de cozinha deve ver os pedidos.
 
-Eu como chefe de cozinha quero ver os pedidos dos clientes em ordem, poder marcar que estão prontos e poder notificar os garçons/garçonetes que o pedido está pronto para ser entregue ao cliente.
+##  O que em breve estará disponível
+<img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
 
----
+❗️Garçom consegui adicionar e remomer produtos ao resumo do pedido
 
-#### História de usuário 4 - Garçom/Garçonete deve ver os pedidos prontos para servir.
+❗️Cozinha realizar pedidos e modificar staus
 
-Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá-los rapidamente aos clientes.
+❗️Garçom receber notificação e consequentemente realizar a entrega do pedido.
 
-##### Critérios de aceitação
 
-- Ver a lista de pedidos prontos para servir.
-- Marque os pedidos que foram entregues.
+##  O que estamos usando e aprendendo nesta aplicação?
 
-##### Definição de pronto
+Consumimos algumas APIs, HTML, CSS, JS, ReactJs, GitHub e para organização do projeto usmos a ferramenta Trello
 
-- Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
-- Você deu deploy de seu aplicativo.
-- Os dados devem ser mantidos intactos, mesmo depois que um pedido foi terminado. Tudo isso para poder ter estatísticas no futuro.
+##  Desenvolvido por:
 
----
-### Tecnologias Utilizadas
-As seguintes ferramentas foram usadas na construção do projeto:
+Hadassa Costa ![](https://github.com/Costahadassa)
 
- - React
- - JavaScript
- - JSX
- - CSS
 
-### Metodologia Ágil
-![prototipo-baixa](/metodo.png)
-![prototipo-baixa](/gostoso.png)
-
-### Desenvolvedoras
-Hadassa Costa [Github](https://github.com/Costahadassa)
-Mayara [Github](https://github.com/apretamayara)
+Mayara Oliveira![](https://github.com/apretamayara)
