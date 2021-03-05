@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Lanchonete Gostoso & Saudável
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicação foi criada para uma lanchonete que houve um aumento nas demandas e faz entregas 24 horas. 
+A necessidade do cliente era uam aplicação onde onde os funcionários conseguem realizar os pedidos dos clientes por um iPad e envia para a cozinha, lá é onde os pedidos são realizados por ordem de horário e depois de pronto, o pedido é retornado ao garçom, realizando assim entrega na mesa da cliente.
 
-## Available Scripts
+A lanchonete tem 2 menus: o do café da manhã e o restante do dia, o cliente fazendo o pedido, o garçom consegue adicionar ou diminuir produtos ao resumo do pedido e no mesmo já mostra o total da compra.
+![humm](https://i0.wp.com/24.media.tumblr.com/e594fbaff6c6d3fc4ad3e13fea2bd63c/tumblr_mqfroaqxDH1rzo57ko1_500.gif)
+ 
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##  Desenho de interface do usuário 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Nessa primeira tela temos o login, onde o funcionário pode ter acesso a sua respectiva tela e caso não tenha cadastro ele consegue criar.
 
-### `npm test`
+![login](/img/login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A tela de cadastro é a tela que o funcionario realiza o mesmo e juntamente com sua função, garantindo a eficiencia das telas de funcionalidade.
 
-### `npm run build`
+![cadastro](/img/cadastro.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Já na tela do salão, o funcionário tem acesso aos cardápios, ao resumo do pedido, podendo adicionar ou remover as unidades do pedido e enviar para cozinha.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![salai](/img/salao.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Na tela da cozinha, o cozinheiro tem acesso aos pedidos por ordem de horario, tem acesso ao nome do cliente e mesa, consegue modificar o staus do pedido e enviar para o garçom realizar a entrega.
 
-### `npm run eject`
+![cozinha](/img/index.jpeg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## O que o usuário já tem acesso 
+<img src= "https://miro.medium.com/max/1600/1*XZ3TXibcnhNic2dCQSKIbg.gif" width="60" height="60" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+✅ Fazer login e o mesmo já direciona o funcionário para sua respectiva tela.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+✅ Usuário consegue fazer seu cadastro juntamente com sua função.
 
-## Learn More
+✅ Consegue visualisar os produtos do cardápio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  O que em breve estará disponível
+<img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
 
-### Code Splitting
+❗️Garçom consegui adicionar e remomer produtos ao resumo do pedido
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+❗️Cozinha realizar pedidos e modificar staus
 
-### Analyzing the Bundle Size
+❗️Garçom receber notificação e consequentemente realizar a entrega do pedido.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+##  O que estamos usando e aprendendo nesta aplicação?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Consumimos algumas APIs, HTML, CSS, JS, ReactJs, GitHub e para organização do projeto usmos a ferramenta Trello
 
-### Advanced Configuration
+##  Desenvolvido por:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Hadassa Costa ![](https://github.com/Costahadassa)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mayara Oliveira![](https://github.com/apretamayara)
