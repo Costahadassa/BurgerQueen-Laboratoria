@@ -4,8 +4,7 @@
 ## Índice
 
 * [Introdução](#introdução)
-* [Resumo do projeto](#resumo-do-projeto)
-* [Protótipo](#protótipo)
+* [Histórias de Usuários](#histórias-de-usuários)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Metodologia Ágil](#metodologia-ágil)
 * [Desenvolvedoras](#desenvolvedoras)
@@ -85,5 +84,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Desenvolvedoras
 Hadassa Costa [Github](https://github.com/Costahadassa)
 Mayara [Github](https://github.com/apretamayara)
-
-
