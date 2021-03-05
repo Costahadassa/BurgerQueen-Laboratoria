@@ -55,7 +55,7 @@ Consumimos algumas APIs, HTML, CSS, JS, ReactJs, GitHub e para organização do 
 
 ##  Desenvolvido por:
 
-Hadassa Costa ![](https://github.com/Costahadassa)
+Hadassa Costa ≳ https://github.com/Costahadassa
 
 
-Mayara Oliveira![](https://github.com/apretamayara)
+Mayara Oliveira ≳ https://github.com/apretamayara
