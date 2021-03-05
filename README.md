@@ -42,7 +42,7 @@ Na tela da cozinha, o cozinheiro tem acesso aos pedidos por ordem de horario, te
 ##  O que em breve estará disponível
 <img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
 
-❗️Garçom consegui adicionar e remomer produtos ao resumo do pedido
+❗️Garçom consegue adicionar e remomer produtos ao resumo do pedido
 
 ❗️Cozinha realizar pedidos e modificar staus
 
