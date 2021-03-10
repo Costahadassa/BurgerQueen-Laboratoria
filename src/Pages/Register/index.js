@@ -51,14 +51,14 @@ function Register() {
         <div className="half-box">
           <label> Função</label>
           <input type="radio" className='select' value='cooker' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Cozinha</p> 
-          {/* <input type="radio" className='select' value='waiter' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Garçom/Garçonete</p>  */}
+          <input type="radio" className='select' value='waiter' name='role' onChange={(e) => setRegister({...signIn, 'role' : e.target.value})} /> <p>Garçom/Garçonete</p> 
         </div>
         <div className="half-box">
           <label> Senha</label>
           <input type="password" name="password" onChange = {(e)=> setRegister({...signIn,'password': e.target.value})} id="password" placeholder="Digite sua senha"/>
         </div>
         <div className="full-box">
-          <input type="submit" id="btn-submit-email" value="submit"/>
+          <input type="submit" id="btn-submit-email" value="eviar"/>
         </div> 
       </form>
     </div>

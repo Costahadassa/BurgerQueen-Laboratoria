@@ -1,21 +1,22 @@
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #f57118;
     border: none;
   }
   
   
-  link{
-    color: rgb(97, 218, 42); /*cor dos links */
-   cursor: pointer;
+  link {
+    color: rgb(97, 218, 42);
+    /*cor dos links */
+    cursor: pointer;
   }
   
-  body{
+  body {
     padding-top: 5vh;
-   background-color: white;
+    background-color: white;
   
   }
   
@@ -23,7 +24,7 @@
     padding: 1.5%;
   }
   
-  #main-container{
+  #main-container {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -32,24 +33,24 @@
     padding: 5%;
   }
   
-  #main-container h1{
+  #main-container h1 {
     display: flex;
     text-align: center;
-    margin-top: 25px ;
+    margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 1.6 rem; /*adaptada ao elemento root*/
+    font-size: 1.6 rem;
+  
   }
   
-  form{
+  form {
     font-family: "ChunkFive";
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+  
   }
   
-  
-  input[type="submit"]{
+  input[type="submit"] {
     background-color: rgb(126, 214, 43);
     color: rgb(248, 247, 248);
     border-style: solid;
