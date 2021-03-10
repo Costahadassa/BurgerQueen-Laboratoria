@@ -160,8 +160,8 @@ function Hall() {
     }
     return (
         <>
-            <input type='text' placeholder='Nome do Cliente' onChange={(e) => setPedido({ ...pedido, 'client': e.target.value })}></input>
-            <input type='text' placeholder='Mesa' onChange={(e) => setPedido({ ...pedido, 'table': e.target.value })}></input>
+            {/* <input type='text' placeholder='Nome do Cliente' onChange={(e) => setPedido({ ...pedido, 'client': e.target.value })}></input>
+            <input type='text' placeholder='Mesa' onChange={(e) => setPedido({ ...pedido, 'table': e.target.value })}></input> */}
             <button onClick={getCafe}>Café da manhã</button>
             <div>
                 {menu && menu.map((item) => (
@@ -201,6 +201,8 @@ function Hall() {
                     </div>
                 ))}
             </div>
+            <input type='text' placeholder='Nome do Cliente' onChange={(e) => setPedido({ ...pedido, 'client': e.target.value })}></input>
+            <input type='text' placeholder='Mesa' onChange={(e) => setPedido({ ...pedido, 'table': e.target.value })}></input>
             <button onClick={handlePedido}>Enviar Pedido</button>
 
             <h1 className="tituloCozinha">Pedidos Prontos</h1>
